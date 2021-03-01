@@ -1,0 +1,503 @@
+.background {
+   position: absolute;
+   z-index: -1;
+   display: flex;
+   flex-wrap: wrap;
+   height: 33.3%;
+   width: 100%;
+   overflow: hidden;
+   justify-content: space-between;
+
+   h5 {
+      margin: 0 20px;
+   }
+
+   // h5 {
+   //    position: absolute;
+
+   //    &:nth-child(1) {
+   //       top: 0;
+   //       left: 1%;
+   //    }
+
+   //    &:nth-child(2) {
+   //       top: 10%;
+   //       left: 2%;
+   //    }
+
+   //    &:nth-child(3) {
+   //       top: 22%;
+   //       left: 1%;
+   //    }
+
+   //    &:nth-child(4) {
+   //       top: 31%;
+   //       left: 4%;
+   //    }
+
+   //    &:nth-child(5) {
+   //       top: 56%;
+   //       left: 1%;
+   //    }
+
+   //    &:nth-child(6) {
+   //       top: 66%;
+   //       left: 1%;
+   //    }
+
+   //    &:nth-child(7) {
+   //       top: 66%;
+   //       left: 6.5%;
+   //    }
+
+   //    &:nth-child(8) {
+   //       top: 75%;
+   //       left: 2%;
+   //    }
+
+   //    &:nth-child(9) {
+   //       top: 75%;
+   //       left: 9%;
+   //    }
+
+   //    &:nth-child(10) {
+   //       top: 50%;
+   //       left: 12%;
+   //    }
+
+   //    &:nth-child(11) {
+   //       top: 25%;
+   //       left: 14%;
+   //    }
+
+   //    &:nth-child(12) {
+   //       top: 14%;
+   //       left: 14%;
+   //    }
+
+   //    &:nth-child(13) {
+   //       top: 6%;
+   //       left: 10%;
+   //    }
+
+   //    &:nth-child(14) {
+   //       top: 0%;
+   //       left: 18%;
+   //    }
+
+   //    &:nth-child(15) {
+   //       top: 36%;
+   //       left: 12%;
+   //    }
+
+   //    &:nth-child(16) {
+   //       top: 42%;
+   //       left: 19%;
+   //    }
+
+   //    &:nth-child(17) {
+   //       top: 64%;
+   //       left: 13%;
+   //    }
+
+   //    &:nth-child(18) {
+   //       top: 75%;
+   //       left: 15%;
+   //    }
+
+   //    &:nth-child(19) {
+   //       top: 62%;
+   //       left: 16%;
+   //    }
+
+   //    &:nth-child(20) {
+   //       top: 52%;
+   //       left: 22%;
+   //    }
+
+   //    &:nth-child(21) {
+   //       top: 70%;
+   //       left: 22%;
+   //    }
+
+   //    &:nth-child(22) {
+   //       top: 15%;
+   //       left: 56%;
+   //    }
+
+   //    &:nth-child(23) {
+   //       top: 44.5%;
+   //       left: 25%;
+   //    }
+
+   //    &:nth-child(24) {
+   //       top: 63.5%;
+   //       left: 25%;
+   //    }
+
+   //    &:nth-child(25) {
+   //       top: 20%;
+   //       left: 22%;
+   //    }
+
+   //    &:nth-child(26) {
+   //       top: 8.5%;
+   //       left: 23%;
+   //    }
+
+   //    &:nth-child(27) {
+   //       top: 0%;
+   //       left: 26.5%;
+   //    }
+
+   //    &:nth-child(28) {
+   //       top: 0%;
+   //       left: 34%;
+   //    }
+
+   //    &:nth-child(29) {
+   //       top: 13.5%;
+   //       left: 32%;
+   //    }
+
+   //    &:nth-child(30) {
+   //       top: 40%;
+   //       left: 32%;
+   //    }
+
+   //    &:nth-child(31) {
+   //       top: 75%;
+   //       left: 27%;
+   //    }
+
+   //    &:nth-child(32) {
+   //       top: 0;
+   //       right: 1%;
+   //    }
+
+   //    &:nth-child(33) {
+   //       top: 10%;
+   //       right: 6%;
+   //    }
+
+   //    &:nth-child(34) {
+   //       top: 22%;
+   //       right: 1%;
+   //    }
+
+   //    &:nth-child(35) {
+   //       top: 33%;
+   //       right: 1%;
+   //    }
+
+   //    &:nth-child(36) {
+   //       top: 45%;
+   //       right: 1%;
+   //    }
+
+   //    &:nth-child(37) {
+   //       top: 28%;
+   //       left: 33%;
+   //    }
+
+   //    &:nth-child(38) {
+   //       top: 63%;
+   //       right: 2.5%;
+   //    }
+
+   //    &:nth-child(39) {
+   //       top: 75%;
+   //       right: 2%;
+   //    }
+
+   //    &:nth-child(40) {
+   //       top: 75%;
+   //       right: 9%;
+   //    }
+
+   //    &:nth-child(41) {
+   //       top: 52%;
+   //       right: 6%;
+   //    }
+
+   //    &:nth-child(42) {
+   //       top: 31%;
+   //       right: 27%;
+   //    }
+
+   //    &:nth-child(43) {
+   //       top: 10%;
+   //       right: 14%;
+   //    }
+
+   //    &:nth-child(44) {
+   //       top: 0%;
+   //       right: 13.5%;
+   //    }
+
+   //    &:nth-child(45) {
+   //       top: 0%;
+   //       right: 18%;
+   //    }
+
+   //    &:nth-child(46) {
+   //       top: 31%;
+   //       right: 6%;
+   //    }
+
+   //    &:nth-child(47) {
+   //       top: 49%;
+   //       right: 15%;
+   //    }
+
+   //    &:nth-child(48) {
+   //       top: 64%;
+   //       right: 8%;
+   //    }
+
+   //    &:nth-child(49) {
+   //       top: 75%;
+   //       right: 15%;
+   //    }
+
+   //    &:nth-child(50) {
+   //       top: 63%;
+   //       right: 19%;
+   //    }
+
+   //    &:nth-child(51) {
+   //       top: 53%;
+   //       right: 19%;
+   //    }
+
+   //    &:nth-child(52) {
+   //       top: 70%;
+   //       right: 22%;
+   //    }
+
+   //    &:nth-child(53) {
+   //       top: 15%;
+   //       right: 56%;
+   //    }
+
+   //    &:nth-child(54) {
+   //       top: 44.5%;
+   //       right: 25%;
+   //    }
+
+   //    &:nth-child(55) {
+   //       top: 63.5%;
+   //       right: 25%;
+   //    }
+
+   //    &:nth-child(56) {
+   //       top: 20%;
+   //       right: 22%;
+   //    }
+
+   //    &:nth-child(57) {
+   //       top: 10%;
+   //       right: 21%;
+   //    }
+
+   //    &:nth-child(58) {
+   //       top: 0%;
+   //       right: 26.5%;
+   //    }
+
+   //    &:nth-child(59) {
+   //       top: 0%;
+   //       right: 34%;
+   //    }
+
+   //    &:nth-child(60) {
+   //       top: 13.5%;
+   //       right: 32%;
+   //    }
+
+   //    &:nth-child(61) {
+   //       top: 41%;
+   //       right: 36%;
+   //    }
+
+   //    &:nth-child(62) {
+   //       top: 75%;
+   //       right: 27%;
+   //    }
+
+   //    &:nth-child(63) {
+   //       top: 75%;
+   //       right: 35%;
+   //    }
+
+   //    &:nth-child(64) {
+   //       top: 75%;
+   //       right: 53%;
+   //    }
+
+   //    &:nth-child(65) {
+   //       top: 75%;
+   //       right: 58%;
+   //    }
+
+   //    &:nth-child(66) {
+   //       top: 75%;
+   //       right: 47%;
+   //    }
+
+   //    &:nth-child(67) {
+   //       top: 75%;
+   //       right: 43%;
+   //    }
+
+   //    &:nth-child(68) {
+   //       top: 65%;
+   //       right: 49%;
+   //    }
+
+   //    &:nth-child(69) {
+   //       top: 65%;
+   //       right: 42%;
+   //    }
+
+   //    &:nth-child(70) {
+   //       top: 65%;
+   //       right: 35%;
+   //    }
+
+   //    &:nth-child(71) {
+   //       top: 65%;
+   //       right: 58%;
+   //    }
+
+   //    &:nth-child(72) {
+   //       top: 15%;
+   //       right: 46%;
+   //    }
+
+   //    &:nth-child(73) {
+   //       top: 50%;
+   //       right: 38%;
+   //    }
+
+   //    &:nth-child(74) {
+   //       top: 0;
+   //       right: 40%;
+   //    }
+
+   //    &:nth-child(75) {
+   //       top: 50%;
+   //       right: 62%;
+   //    }
+
+   //    &:nth-child(76) {
+   //       top: 38%;
+   //       right: 40%;
+   //    }
+
+   //    &:nth-child(77) {
+   //       top: 51%;
+   //       right: 48%;
+   //    }
+
+   //    &:nth-child(78) {
+   //       top: 42%;
+   //       right: 54%;
+   //    }
+
+   //    &:nth-child(79) {
+   //       top: 0;
+   //       right: 56%;
+   //    }
+
+   //    &:nth-child(80) {
+   //       top: 42%;
+   //       right: 46%;
+   //    }
+
+   //    &:nth-child(81) {
+   //       top: 39%;
+   //       right: 19%;
+   //    }
+
+   //    &:nth-child(82) {
+   //       top: 0%;
+   //       right: 6%;
+   //    }
+
+   //    &:nth-child(83) {
+   //       top: 10%;
+   //       right: 0;
+   //    }
+
+   //    &:nth-child(84) {
+   //       top: 28%;
+   //       right: 55%;
+   //    }
+
+   //    &:nth-child(85) {
+   //       top: 28%;
+   //       right: 43%;
+   //    }
+
+   //    &:nth-child(86) {
+   //       top: 10%;
+   //       right: 27%;
+   //    }
+
+   //    &:nth-child(87) {
+   //       top: 30%;
+   //       right: 35%;
+   //    }
+
+   //    &:nth-child(88) {
+   //       top: 41%;
+   //       right: 5%;
+   //    }
+
+   //    &:nth-child(89) {
+   //       top: 64%;
+   //       right: 12.5%;
+   //    }
+
+   //    &:nth-child(90) {
+   //       top: 31%;
+   //       right: 15.5%;
+   //    }
+
+   //    &:nth-child(91) {
+   //       top: 31%;
+   //       right: 15.5%;
+   //    }
+
+   //    &:nth-child(92) {
+   //       top: 21.5%;
+   //       right: 10%;
+   //    }
+
+   //    &:nth-child(93) {
+   //       top: 7.5%;
+   //       right: 55%;
+   //    }
+
+   //    &:nth-child(94) {
+   //       top: 0;
+   //       right: 51.5%;
+   //    }
+
+   //    &:nth-child(95) {
+   //       top: 20%;
+   //       right: 87%;
+   //    }
+
+   //    &:nth-child(96) {
+   //       top: 43%;
+   //       right: 92%;
+   //    }
+
+   //    &:nth-child(97) {
+   //       top: 0;
+   //       right: 45%;
+   //    }
+   // }
+}
