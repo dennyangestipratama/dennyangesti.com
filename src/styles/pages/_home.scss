@@ -1,35 +1,15 @@
 body {
-   background: black;
+   background: #FAF102;
 }
 
-.home {
-   width: 100vw;
-   height: 100vh;
+.header {
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    position: relative;
-
-   span {
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      &:first-child {
-         animation: glitch 650ms infinite;
-         clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-         transform: translate(-.015em, -0.025em);
-         opacity: .8;
-      }
-
-      &:last-child {
-         animation: glitch 700ms infinite;
-         clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
-         transform: translate(.0115em, 0.025em);
-         opacity: .8;
-      }
-   }
+   max-width: 100vw;
+   min-height: 100vh;
 
    @keyframes glitch {
       0% {
@@ -108,6 +88,26 @@ body {
    ;
    animation: glitch 550ms infinite;
    position: relative;
+
+   span {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      &:first-child {
+         animation: glitch 650ms infinite;
+         clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+         transform: translate(-.015em, -0.025em);
+         opacity: .8;
+      }
+
+      &:last-child {
+         animation: glitch 700ms infinite;
+         clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+         transform: translate(.0115em, 0.025em);
+         opacity: .8;
+      }
+   }
 }
 
 .home-sub {
@@ -116,14 +116,81 @@ body {
 
 .text-glitch {
    margin: 0;
+   font-weight: 700;
+   color: #FFFFFF;
+}
+
+.text-glitch--title {
    font-size: 64px;
-   font-weight: 600;
    letter-spacing: 0.05em;
 }
 
-.text__sub-glitch {
-   margin: 0;
+.text-glitch--subtitle {
    font-size: 32px;
-   font-weight: 600;
    letter-spacing: 0.55em;
+}
+
+.home-button {
+   width: 130px;
+   height: 65px;
+   clip-path: polygon(96% 14%, 90% 0%, 35% 0%, 30% 14%, 0% 14%, 0% 80%, 15% 100%, 70% 100%, 75% 85%, 100% 85%, 100% 50%, 96% 40%);
+   position: absolute;
+   cursor: pointer;
+   border: none;
+   background: #FF003C;
+
+   span {
+      width: 100%;
+      font-size: 15px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      font-weight: 500;
+   }
+}
+
+.home-btn__wrap {
+   position: relative;
+   width: 100%;
+}
+
+.home-button--left {
+   bottom: -12rem;
+   left: 5rem;
+
+   span {
+      position: absolute;
+      display: block;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+   }
+}
+
+.home-button--right {
+   bottom: -12rem;
+   right: 5rem;
+   transform: scaleX(-1);
+   box-shadow: 30px 30px 0px #FAFF00;
+
+   span {
+      position: absolute;
+      display: block;
+      top: 20%;
+      left: 50%;
+      transform: scaleX(-1) translate(50%, 50%);
+   }
+}
+
+.home-button--shadow--left {
+   bottom: -12.5rem;
+   left: 5.5rem;
+   z-index: -1;
+   background: #02D8F3;
+}
+
+.home-button--shadow--right {
+   bottom: -12.5rem;
+   right: 5.5rem;
+   z-index: -1;
+   background: #02D8F3;
 }
